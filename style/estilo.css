@@ -12,7 +12,7 @@
 .banner{
 	width: 100%;
 	height: 2160px;
-	background-image: url(../utprimes/banner2.jpg);
+	background-image: url(../images/banner2.jpg);
 	background-size: cover;
 }
 
@@ -39,7 +39,7 @@ nav.desktop li{
 }
 nav.desktop a{
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-family: 'Oleo Script Swash Caps', cursive;
 	/*font-family: 'Hurricane', cursive;*/
 	font-size: 20px;
@@ -144,7 +144,6 @@ nav.desktop a{
 	transform:translate(-50%,0%);
 	-ms-transform:translate(-50%,0%);
 	color: #F2A341;
-
 }
 
 .resums h2{
@@ -164,7 +163,7 @@ nav.desktop a{
 
 .fotos{
 	position: absolute;
-	top: 1500px;
+	top: 1400px;
 	left: 50%;
 	transform:translate(-50%,0%);
 	-ms-transform:translate(-50%,0%);
@@ -172,5 +171,5 @@ nav.desktop a{
 
 .fotos h2{
 	text-align: center;
-	color: #7DA491;
+	color: white;
 }
