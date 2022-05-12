@@ -1,17 +1,4 @@
 
-/*scroll-top more*/
-$(function(){
-	$('#team a').click(function(){
-		var href = $this.attr('href');
-		var offSetTop = $href.offset().top;
-
-		$('html,body').animate({'scrollTop':offSetTop}, 3);
-		console.log("clique")
-
-		return false;
-	})
-})
-
 /*letreiro*/
 
 function typeWrite(elemento) {
@@ -63,8 +50,19 @@ $(function(){
 
 
 
-$('#item-menu').click(function (e)
-{
-    $('#item-menu').removeClass('active');
+$('nav a').click(function (e){
+    $('nav a').removeClass('active');
     $(this).addClass('active');
 });
+
+/*scroll-top more*/
+
+$('a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+	targetOffset = $(id).offset().top;
+	$('html, body').animate({
+		scrollTop: targetOffset
+	 }, 500);
+});
+

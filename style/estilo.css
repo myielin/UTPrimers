@@ -8,7 +8,9 @@
 .vinteecinco{
 	max-width: 25%;
 }
-
+.phytocare{
+	background-color: black;
+}
 .banner{
 	width: 100%;
 	height: 2160px;
@@ -35,18 +37,19 @@ nav.desktop li{
 	font-size: 15px;
 	padding: 0 40px;
 	display: inline-block;
-
+	color: black;
 }
 nav.desktop a{
 	text-decoration: none;
-	color: black;
 	font-family: 'Oleo Script Swash Caps', cursive;
-	/*font-family: 'Hurricane', cursive;*/
 	font-size: 20px;
 	font-weight: 500;
+	color: #7DA491;
 
 }
-
+.active{
+	color: white !important;
+}
 .mobile{
 	display: none;
 }
@@ -61,8 +64,6 @@ nav.desktop a{
 	-ms-transform:translate(-50%,-50%);
 }
 .frase h2{
-	/*-webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #24584d;*/
 	color: #F2F2F2;
 	font-size: 50px;
 	text-align: center;
@@ -71,8 +72,6 @@ nav.desktop a{
 .frase h3{
 	text-align: center;
 	font-size: 30px;
-	/*-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;*/
 	color: #7DA491;
 }
 
@@ -89,6 +88,7 @@ nav.desktop a{
 	transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
 }
+
 
 .more h4 i{
 	width: 10px;
@@ -172,4 +172,15 @@ nav.desktop a{
 .fotos h2{
 	text-align: center;
 	color: white;
+}
+
+
+/*ANIMAÇÕES-------------------*/
+
+nav.desktop a:hover {
+	color: white !important;
+	border-bottom: 1px solid white;
+	transition-duration: 1s;
+	transition-property: border-bottom, color;
+
 }
