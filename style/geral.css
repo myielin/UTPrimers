@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+nav.desktop ul{
+	list-style-type: none;
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+nav.desktop li{
+	font-size: 15px;
+	padding: 0 40px;
+	display: inline-block;
+}
+nav.desktop a{
+	text-decoration: none;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.frase{
+	width: 98%;
+	max-width: 800px;
+	position: absolute;
+	left: 50%;
+	top: 350px;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.frase h2{
+	font-size: 50px;
+	text-align: center;
+	font-weight: 3000;
+}
