@@ -4,7 +4,12 @@ body{
 }
 .phytxt{
 	color: #ffd97e;
+	display: block;
+	text-align: center;
 }
-
+.logo {
+	margin-top: 2%;
+	margin-left: 6%;
+}
 
 
