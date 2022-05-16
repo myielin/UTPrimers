@@ -36,12 +36,7 @@ nav.desktop li{
 	color: black;
 }
 nav.desktop a{
-	text-decoration: none;
-	font-family: 'Oleo Script Swash Caps', cursive;
-	font-size: 20px;
-	font-weight: 500;
 	color: #7DA491;
-
 }
 .active{
 	color: white !important;

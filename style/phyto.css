@@ -6,6 +6,11 @@ body{
 .desktop ul{
 	width: 60%;
 }
+.desktop li:hover{
+	text-decoration: underline;
+	color:#fffb8e;
+}
+
 .phytxt{
 	color: #ffd97e;
 	display: block;

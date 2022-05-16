@@ -23,6 +23,7 @@ nav.desktop a{
 	font-family: 'Oleo Script Swash Caps', cursive;
 	font-size: 20px;
 	font-weight: 500;
+	color: inherit;
 }
 .linha{
 	position: relative;
@@ -97,11 +98,11 @@ nav.desktop a{
 }
 
 
-
-
 .teamicons:hover {
-	border: 1px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 1px;
 	border-style: solid;
 	border-color: #F2A341;
-	border-radius: 5%;
 }

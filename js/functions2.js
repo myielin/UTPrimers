@@ -68,11 +68,17 @@ $('a[href^="#"]').on('click', function(e) {
 
 /* diretorias */
 $("#hpb").click(function(){
+	$("#com").slideUp("fast");
+	$("#psq").slideUp("fast");
 	$("#hp").toggle("slow");
 });
 $("#psqb").click(function(){
+	$("#com").slideUp("fast");
+	$("#hp").slideUp("fast");
 	$("#psq").toggle("slow");
 });
 $("#comb").click(function(){
+	$("#hp").slideUp("fast");
+	$("#psq").slideUp("fast");
 	$("#com").toggle("slow");
 });
