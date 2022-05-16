@@ -22,7 +22,7 @@ $(function(){
 	verificarCliqueMenu();
 
 	function verificarCliqueMenu(){
-		$('nav a').click(function(){
+		$('.item-a').click(function(){
 			var href = $(this).attr('href');
 			$.ajax({
 				'timeout': 10000,
@@ -66,3 +66,13 @@ $('a[href^="#"]').on('click', function(e) {
 	 }, 500);
 });
 
+/* diretorias */
+$("#hpb").click(function(){
+	$("#hp").toggle("slow");
+});
+$("#psqb").click(function(){
+	$("#psq").toggle("slow");
+});
+$("#comb").click(function(){
+	$("#com").toggle("slow");
+});
