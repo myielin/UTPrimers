@@ -3,6 +3,9 @@ body{
 	background-size: cover;
 	height: 1360px;
 }
+.desktop ul{
+	width: 60%;
+}
 .phytxt{
 	color: #ffd97e;
 	display: block;

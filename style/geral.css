@@ -38,7 +38,8 @@ nav.desktop a{
 }
 
 .frase{
-	width: 98%;
+	width: 100%;
+	display: inline;
 	max-width: 800px;
 	position: absolute;
 	left: 50%;
