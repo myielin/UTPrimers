@@ -140,22 +140,6 @@ nav.desktop a{
 	margin-bottom: 15px;
 }
 
-.dirs {
-	background-color: rgba(0, 0, 0, 0.3);
-	text-align: justify;
-	padding: 3%;
-	color: white;
-	display: none;
-	font-size: 135%;
-	}
-	.dirs hr{
-		color: 2px 2px #7DA491;
-		margin-top: 3%;
-		margin-bottom: 3%;
-	}
-	.dirs h1{
-		text-shadow: 1px 1px rgb(219, 145, 8);
-	}
 
 
 
