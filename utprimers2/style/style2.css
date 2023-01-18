@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+.clear{
+	clear: both;
+}
+
+.w40{
+	width: 40%;
+}
+
+.vinteecinco{
+	max-width: 25%;
+}
+.phytocare{
+	background-color: black;
+}
+.banner{
+	width: 100%;
+	height: 2160px;
+	background-image: url(../images/banner2.jpg);
+	background-size: cover;
+}
+
+.logo img{
+	position: absolute;
+	width: 150px;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+nav.desktop ul{
+	list-style-type: none;
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+nav.desktop li{
+	font-size: 15px;
+	padding: 0 40px;
+	display: inline-block;
+	color: black;
+}
+nav.desktop a{
+	text-decoration: none;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 20px;
+	font-weight: 500;
+	color: #7DA491;
+
+}
+.active{
+	color: white !important;
+}
+.mobile{
+	display: none;
+}
+
+.frase{
+	width: 98%;
+	max-width: 800px;
+	position: absolute;
+	left: 50%;
+	top: 350px;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.frase h2{
+	color: #F2F2F2;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 3000;
+}
+.frase h3{
+	text-align: center;
+	font-size: 30px;
+	color: #7DA491;
+}
+
+.more h4{
+	position: absolute;
+	padding: 5px 30px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	margin-top: 30px;
+	border: 1px solid white;
+	left: 50%;
+	top: 430px;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+
+
+.more h4 i{
+	width: 10px;
+}
+
+.welcome{
+	position: absolute;
+	top: 800px;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	max-width: 700px;
+}
+.welcome h2{
+	color: white;
+	text-align: center;
+}
+.linha{
+	position: relative;
+	width: 100px;
+	border-radius: 2.5px;
+	height: 5px;
+	margin-left: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #F2A341;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+}
+
+.welcome p{
+	color: white;
+	text-align: center;
+}
+
+.resumos{
+	position: absolute;
+	left: 10%;
+	top: 930px;
+}
+.resums{
+	width: 18%;
+	display: inline-block;
+	margin: 30px;
+	border-radius: 15px;
+	background-color: #002412;
+	padding: 10px 10px;
+}
+.resums i{
+	margin-top: 5px;
+	position: relative;
+	left: 50%;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+	color: #F2A341;
+}
+
+.resums h2{
+	margin-top: 15px;
+	text-align: center;
+	color: #7DA491;
+}
+
+.resums h3{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	text-align: center;
+	color: #7DA491;
+	margin-bottom: 15px;
+}
+
+.fotos{
+	position: absolute;
+	top: 1400px;
+	left: 50%;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+}
+
+.fotos h2{
+	text-align: center;
+	color: white;
+}
+
+
+/*FOOTER--------------------------------------------*/
+.back-to-top-button{
+	width: 100%;
+	height: 10px;
+	background-color: black;
+	text-align: center;
+	overflow: hidden;
+	font-size: 13px;
+	cursor: pointer;
+}
+.back-to-top-button p{
+	color: white;
+	position: relative;
+	top: -3px;
+}
+.formulario{
+
+	width: 95%;
+	height: 400px;
+	border-radius: 20px;
+	background-color: white;
+}
+.input-box{
+	height: 50px;
+}
+.form{
+	margin: 20px 6%;
+	width: 100%;
+	display: flex;
+}
+.dados{
+	width: 40%;
+}
+.dados input{
+	width: 100%;
+}
+.mensage{
+	width: 40%;
+}
+.mensage textarea{
+	width: 100%;
+}
+
+
+
+
+footer{
+	width: 100%;
+	background-color: rgb(50, 205, 50);
+	padding: 5%;
+}
+footer .fdiv{
+	width: 33%;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+
+/*ANIMAÇÕES-------------------*/
+
+nav.desktop a:hover {
+	color: white !important;
+	border-bottom: 1px solid white;
+	transition-duration: 1s;
+	transition-property: border-bottom, color;
+
+}
+.back-to-top-button:hover{
+	height: auto;
+	position: absolute;
+	font-size: 15px;
+	padding: 7px;
+	transition-duration: 1s;
+
+}
+
+
+30

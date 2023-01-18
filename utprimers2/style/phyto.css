@@ -1,0 +1,58 @@
+body{
+	background-image: url(../images/pban.png);
+	background-size: cover;
+	height: 1360px;
+}
+.desktop ul{
+	width: 60%;
+}
+.desktop li:hover{
+	text-decoration: underline;
+	color:#fffb8e;
+}
+
+.phytxt{
+	color: #ffd97e;
+	display: block;
+	text-align: center;
+}
+.logo {
+	margin-top: 2%;
+	margin-left: 6%;
+}
+.fotos{
+	top:700px;
+}
+
+footer{
+	background: #80596e;
+	height: 230px;
+	margin-top: 1210px;
+	padding-right: 6%;
+	padding-left: 6%;
+}
+.fdiv{
+	color: white;
+	display: inline-block;
+	width: 17%;
+	margin-left: 10%;
+	margin-top:5%;
+	float: left;
+}
+.fdiv ul{
+	list-style: none;
+}
+footer img{
+	margin-top: 5%;
+	width: 8%;
+	float: right;
+	margin-right: 5%;
+}
+.fdiv a{
+	padding: 2%;
+}
+
+.fdiv a:hover{
+	text-decoration: underline;
+	background-color: #492337;
+}
