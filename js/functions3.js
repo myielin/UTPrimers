@@ -105,32 +105,3 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollToTop();
 }
-
-
-//Slides diretorias***************
-
-$(".container").hide();
-   $(".um").fadeIn();
-$(".hp").click(function(){
-	$(".container").hide(500);
-    $(".um").fadeIn();
-        });
-$(".r").click(function(){ 
-    //Sem parâmetros: o efeito é executado em 400ms
-    $(".container").hide(500);
-    $(".dois").fadeIn();
-        });
-$(".c").click(function(){ 
-    //Sem parâmetros: o efeito é executado em 400ms
-    $(".container").hide(500);
-    $(".tres").fadeIn();
-        });
-$(".hr").click(function(){ 
-    //Sem parâmetros: o efeito é executado em 400ms
-    $(".container").hide(500);
-    $(".quatro").fadeIn();
-        });
-
-
-
-
