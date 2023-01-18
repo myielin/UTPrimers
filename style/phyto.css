@@ -1,8 +1,7 @@
 body{
 	background-image: url(../images/pban.png);
 	background-size: cover;
-	height: 1260px;
-	width: auto;
+	height: 1360px;
 }
 .desktop ul{
 	width: 60%;
@@ -22,23 +21,13 @@ body{
 	margin-left: 6%;
 }
 .fotos{
-	top:900px;
+	top:700px;
 }
-#intro {
-	top: 700px;
-	position: absolute;
-	color: white;
-	text-align: center;
-	display: none;
-}
-#exp{
-	display: none;
-	width: 60%;
-}
+
 footer{
 	background: #80596e;
 	height: 230px;
-	margin-top: 1410px;
+	margin-top: 1210px;
 	padding-right: 6%;
 	padding-left: 6%;
 }

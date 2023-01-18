@@ -1,3 +1,4 @@
+alert("sim")
 
 /*letreiro*/
 
@@ -22,7 +23,7 @@ $(function(){
 	verificarCliqueMenu();
 
 	function verificarCliqueMenu(){
-		$('.item-a').click(function(){
+		$('nav a').click(function(){
 			var href = $(this).attr('href');
 			$.ajax({
 				'timeout': 10000,
@@ -32,7 +33,6 @@ $(function(){
 				},
 				'success':function(data){
 					$('#paginas').html(data);
-					console.log("não atualizou")
 				}
 			})
 			return false;
@@ -64,21 +64,44 @@ $('a[href^="#"]').on('click', function(e) {
 	$('html, body').animate({
 		scrollTop: targetOffset
 	 }, 500);
+
+	return false;
 });
 
-/* diretorias */
-$("#hpb").click(function(){
-	$("#com").slideUp("fast");
-	$("#psq").slideUp("fast");
-	$("#hp").toggle("slow");
-});
-$("#psqb").click(function(){
-	$("#com").slideUp("fast");
-	$("#hp").slideUp("fast");
-	$("#psq").toggle("slow");
-});
-$("#comb").click(function(){
-	$("#hp").slideUp("fast");
-	$("#psq").slideUp("fast");
-	$("#com").toggle("slow");
-});
+
+//BACK-TO-TOP-BUTTON
+
+
+
+// Set a variable for our button element.
+const scrollToTopButton = document.getElementById('js-top');
+
+// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+const scrollFunc = () => {
+  // Get the current scroll value
+  let y = window.scrollY;
+ 
+};
+
+window.addEventListener("scroll", scrollFunc);
+
+const scrollToTop = () => {
+  // Let's set a variable for the number of pixels we are from the top of the document.
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  
+  // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+  // We'll also animate that scroll with requestAnimationFrame:
+  // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    // ScrollTo takes an x and a y coordinate.
+    // Increase the '10' value to get a smoother/slower scroll!
+    window.scrollTo(0, c - c / 10);
+  }
+};
+
+// When the button is clicked, run our ScrolltoTop function above!
+scrollToTopButton.onclick = function(e) {
+  e.preventDefault();
+  scrollToTop();
+}
