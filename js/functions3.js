@@ -8,7 +8,7 @@ function typeWrite(elemento) {
 		textoArray.forEach((letra, i) => {
 			setTimeout(function(){
 				elemento.innerHTML += letra;
-			}, 300 * i);
+			}, 200 * i);
 		});
 	}
 
@@ -18,7 +18,7 @@ function typeWrite(elemento) {
 
 /*Navegação sem atualizar*/
 
-$(function(){
+/*$(function(){
 
 	verificarCliqueMenu();
 
@@ -40,7 +40,7 @@ $(function(){
 	}
 });
 
-
+*/
 /*$(function(){
 	$('#item-menu').click(function(e){
 		$('#item-menu').removeClass('active')
@@ -50,14 +50,14 @@ $(function(){
 
 
 
-$('nav a').click(function (e){
+/*$('nav a').click(function (e){
     $('nav a').removeClass('active');
     $(this).addClass('active');
 });
-
+*/
 /*scroll-top more*/
 
-$('a[href^="#"]').on('click', function(e) {
+	$('a[href^="#"]').on('click', function(e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
 	targetOffset = $(id).offset().top;
@@ -105,3 +105,30 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollToTop();
 }
+
+
+//Slides diretorias***************
+
+$(".container").hide();
+   $(".um").fadeIn();
+$(".hp").click(function(){
+	$(".container").hide(500);
+    $(".um").fadeIn();
+        });
+$(".r").click(function(){ 
+    //Sem parâmetros: o efeito é executado em 400ms
+    $(".container").hide(500);
+    $(".dois").fadeIn();
+        });
+$(".c").click(function(){ 
+    //Sem parâmetros: o efeito é executado em 400ms
+    $(".container").hide(500);
+    $(".tres").fadeIn();
+        });
+$(".hr").click(function(){ 
+    //Sem parâmetros: o efeito é executado em 400ms
+    $(".container").hide(500);
+    $(".quatro").fadeIn();
+        });
+
+
