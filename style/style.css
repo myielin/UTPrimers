@@ -27,16 +27,16 @@ a {
 
 .banner {
     width: 100%;
-    height: 2160px;
     background-image: url(../images/banner2.jpg);
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 .logo img {
     width: 150px;
     margin-top: 30px;
     margin-left: 50px;
-    margin-bottom: 200px;
+
 }
 
 nav.desktop ul {
@@ -69,17 +69,19 @@ nav.desktop a {
 }
 .fa-bars{
     display: none;
-    margin-bottom: 250px;
 
 }
 
 
 .fra{
+    margin-top: 250px;
+    text-align: left;
     width: 98%;
     max-width: 800px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .fra h2 {
@@ -95,7 +97,11 @@ nav.desktop a {
     color: #7DA491;
 }
 
-.more h4 {
+.more{
+    margin-bottom: 240px;
+}
+
+.more h4 {    
     max-width: 205px;
     padding: 5px 30px;
     text-align: center;
@@ -113,10 +119,10 @@ nav.desktop a {
 
 .welcome {
     margin-left: 50%;
-    margin-top: 240px;
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     max-width: 700px;
+    margin-bottom: 60px;
 }
 
 .welcome h2 {
@@ -144,13 +150,12 @@ nav.desktop a {
 
 .resumos {
     margin-left: 10%;
-    margin-top: 60px;
 }
 
 .resums {
     cursor: pointer;
     width: 18%;
-    min-height: 330px;
+    min-height: 300px;
     display: inline-block;
     vertical-align: middle;
     margin: 30px;
@@ -195,6 +200,8 @@ nav.desktop a {
     background-color: rgba(0, 0, 0, 0.5);
     width: 90%;
     padding: 30px 30px;
+
+
 }
 
 .um {
@@ -216,11 +223,26 @@ nav.desktop a {
     font-size: 18px;
 }
 
+.names-mobile{
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #F2A341;
+    color: white;
+}
+
 .names-directories {
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    width: 70%;
+    width:  55%;
     max-height: 30px;
     border-radius: 15px;
     background-color: #F2A341;
@@ -243,12 +265,8 @@ nav.desktop a {
 }
 
 .directories {
+    margin-top: 100px;
     width: 100%;
-    position: absolute;
-    top: 1400px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
 }
 
 .directories h2 {
@@ -374,7 +392,7 @@ footer {
 }
 
 footer .fdiv {
-    width: 33%;
+    width: 30%;
     text-decoration: none;
     display: inline-block;
 }
@@ -401,9 +419,6 @@ footer .fdiv {
 footer img {
     width: 100px;
     height: 100px;
-    float: right;
-    margin-right: 30px;
-    margin-top: -100px;
 }
 
 
@@ -427,7 +442,64 @@ nav.desktop a:hover {
 
 
 /*responsivo*/
+@media screen and (max-width: 1712px){
+    .resums{
+        min-height: 330px;
+    }
+}
+
+@media screen and (max-width:1590px){
+    .names-directories {
+        width:  65%;
+}
+}
+
+@media screen and (max-width:1350px){
+    .names-directories {
+        width:  75%;
+}
+}
+
+@media screen and (max-width:1180px){
+    .names-directories {
+        display: none;
+}
+    .names-mobile{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    .resumos{
+        margin-left: 0;
+    }
+    .resums {
+        margin-left: 15%;
+        width: 30%;
+        min-height: 300px;
+
+}
+}
+@media screen and (max-width: 1020px){
+    .resums{
+        min-height: 330px;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .resums{
+        margin-left: 25%;
+        min-width: 50%;
+        display: block;
+    }
+
+}
+}
+
+
 @media screen and (max-width: 1220px){
+
+
     .logo img{
         float: right;
         right: 50px;
@@ -438,9 +510,11 @@ nav.desktop a:hover {
     }
 
     .fa-bars{   
-        display: block;
         padding: 30px;
+        display: block;
         cursor: pointer;
+        position: absolute;
+        top: 10px;
     }
     .fa-xmark{
         margin-top: 10px;
@@ -450,8 +524,9 @@ nav.desktop a:hover {
     nav.mobile{
         background-color: #F2A341;
         display: inline-block;
-        position: absolute;
         width: 100%;
+        position: absolute;
+        top: 0;
     }
     nav.mobile li{
         list-style-type: none;

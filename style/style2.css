@@ -1,8 +1,12 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .clear {
@@ -23,22 +27,20 @@
 
 .banner {
     width: 100%;
-    height: 2160px;
     background-image: url(../images/banner2.jpg);
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 .logo img {
-    position: absolute;
     width: 150px;
     margin-top: 30px;
     margin-left: 50px;
+
 }
 
 nav.desktop ul {
     list-style-type: none;
-    position: ;
-    top: 75px;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -65,40 +67,48 @@ nav.desktop a {
 .mobile {
     display: none;
 }
+.fa-bars{
+    display: none;
 
-.frase {
-    width: 98%;
-    max-width: 800px;
-    position: absolute;
-    left: 50%;
-    top: 350px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
-.frase h2 {
+
+.fra{
+    margin-top: 250px;
+    text-align: left;
+    width: 98%;
+    max-width: 800px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fra h2 {
     color: #F2F2F2;
     font-size: 50px;
     text-align: center;
     font-weight: 3000;
 }
 
-.frase h3 {
+.fra h3 {
     text-align: center;
     font-size: 30px;
     color: #7DA491;
 }
 
-.more h4 {
-    position: absolute;
+.more{
+    margin-bottom: 240px;
+}
+
+.more h4 {    
+    max-width: 205px;
     padding: 5px 30px;
     text-align: center;
     font-size: 20px;
     color: white;
-    margin-top: 30px;
     border: 1px solid white;
-    left: 50%;
-    top: 430px;
+    margin-left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -108,12 +118,11 @@ nav.desktop a {
 }
 
 .welcome {
-    position: absolute;
-    top: 800px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     max-width: 700px;
+    margin-bottom: 60px;
 }
 
 .welcome h2 {
@@ -140,9 +149,7 @@ nav.desktop a {
 }
 
 .resumos {
-    position: absolute;
-    left: 10%;
-    top: 930px;
+    margin-left: 10%;
 }
 
 .resums {
@@ -193,7 +200,8 @@ nav.desktop a {
     background-color: rgba(0, 0, 0, 0.5);
     width: 90%;
     padding: 30px 30px;
-    position: absolute;
+
+
 }
 
 .um {
@@ -215,11 +223,26 @@ nav.desktop a {
     font-size: 18px;
 }
 
+.names-mobile{
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #F2A341;
+    color: white;
+}
+
 .names-directories {
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    width: 55%;
+    width:  55%;
     max-height: 30px;
     border-radius: 15px;
     background-color: #F2A341;
@@ -242,12 +265,8 @@ nav.desktop a {
 }
 
 .directories {
+    margin-top: 100px;
     width: 100%;
-    position: absolute;
-    top: 1400px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
 }
 
 .directories h2 {
@@ -373,7 +392,7 @@ footer {
 }
 
 footer .fdiv {
-    width: 33%;
+    width: 30%;
     text-decoration: none;
     display: inline-block;
 }
@@ -400,9 +419,6 @@ footer .fdiv {
 footer img {
     width: 100px;
     height: 100px;
-    float: right;
-    margin-right: 30px;
-    margin-top: -100px;
 }
 
 
@@ -421,4 +437,118 @@ nav.desktop a:hover {
     font-size: 15px;
     padding: 7px;
     transition-duration: 1s;
+}
+
+
+
+/*responsivo*/
+@media screen and (max-width: 1712px){
+    .resums{
+        min-height: 330px;
+    }
+}
+
+@media screen and (max-width:1590px){
+    .names-directories {
+        width:  65%;
+}
+}
+
+@media screen and (max-width:1350px){
+    .names-directories {
+        width:  75%;
+}
+}
+
+@media screen and (max-width:1180px){
+    .names-directories {
+        display: none;
+}
+    .names-mobile{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    .resumos{
+        margin-left: 0;
+    }
+    .resums {
+        margin-left: 15%;
+        width: 30%;
+        min-height: 300px;
+
+}
+}
+@media screen and (max-width: 1020px){
+    .resums{
+        min-height: 330px;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .resums{
+        margin-left: 25%;
+        min-width: 50%;
+        display: block;
+    }
+
+}
+}
+
+
+@media screen and (max-width: 1218px){
+    .fdiv {
+        display: block;
+        color: green;
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1220px){
+
+
+    .logo img{
+        float: right;
+        right: 50px;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    .fa-bars{   
+        padding: 30px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+    }
+    .fa-xmark{
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    nav.mobile{
+        background-color: #F2A341;
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    nav.mobile li{
+        list-style-type: none;
+        border-bottom: 1px solid black;
+        padding: 5px 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .mobile a{
+        text-decoration: none;
+        font-family: 'Oleo Script Swash Caps', cursive;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
 }

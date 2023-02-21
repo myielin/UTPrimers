@@ -1,19 +1,11 @@
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+
+
+$(window).on("load", function(){
+
+
 //alert("sim")
-
-
-//menu mobile
-$(".mobile").hide();
-$(".fa-xmark").hide();
-$(".fa-bars").click(function(){
-    $(".mobile").fadeIn();
-    $(".fa-xmark").fadeIn();
-    $(".fa-bars").hide()
-})
-$(".fa-xmark").click(function(){
-    $(".mobile").hide();
-    $(".fa-bars").fadeIn(500)
-    $(".fa-xmark").hide();
-})
 
 /*letreiro*/
 
@@ -27,65 +19,40 @@ function typeWrite(elemento) {
     });
 }
 
-const utprimers = document.querySelector('.frase h2')
+const utprimers = document.querySelector('.fra h2')
 typeWrite(utprimers)
-
-
-//Slides diretorias***************
-
-$(".container").hide();
-$(".um").fadeIn();
-$(".hp").click(function() {
-    $(".container").hide(500);
-    $(".um").fadeIn();
-});
-$(".r").click(function() {
-    //Sem parâmetros: o efeito é executado em 400ms
-    $(".container").hide(500);
-    $(".dois").fadeIn();
-});
-$(".c").click(function() {
-    //Sem parâmetros: o efeito é executado em 400ms
-    $(".container").hide(500);
-    $(".tres").fadeIn();
-});
-$(".hr").click(function() {
-    //Sem parâmetros: o efeito é executado em 400ms
-    $(".container").hide(500);
-    $(".quatro").fadeIn();
-});
 
 
 /*Navegação sem atualizar*/
 
 /*$(function(){
 
-    verificarCliqueMenu();
+	verificarCliqueMenu();
 
-    function verificarCliqueMenu(){
-        $('nav a').click(function(){
-            var href = $(this).attr('href');
-            $.ajax({
-                'timeout': 10000,
-                'url':href,
-                'error':function(){
-                    console.log("Ocorreu um erro!");
-                },
-                'success':function(data){
-                    $('#paginas').html(data);
-                }
-            })
-            return false;
-        })
-    }
+	function verificarCliqueMenu(){
+		$('nav a').click(function(){
+			var href = $(this).attr('href');
+			$.ajax({
+				'timeout': 10000,
+				'url':href,
+				'error':function(){
+					console.log("Ocorreu um erro!");
+				},
+				'success':function(data){
+					$('#paginas').html(data);
+				}
+			})
+			return false;
+		})
+	}
 });
 
 */
 /*$(function(){
-    $('#item-menu').click(function(e){
-        $('#item-menu').removeClass('active')
-        $(this).addClass('active')
-    })
+	$('#item-menu').click(function(e){
+		$('#item-menu').removeClass('active')
+		$(this).addClass('active')
+	})
 })*/
 
 
@@ -147,4 +114,55 @@ scrollToTopButton.onclick = function(e) {
 }
 
 
+//Slides diretorias***************
 
+$(".container").hide();
+$(".um").fadeIn();
+$(".hp").click(function() {
+    $(".container").hide();
+    $(".um").fadeIn();
+});
+$(".r").click(function() {
+    //Sem parâmetros: o efeito é executado em 400ms
+    $(".container").hide();
+    $(".dois").fadeIn();
+});
+$(".c").click(function() {
+    //Sem parâmetros: o efeito é executado em 400ms
+    $(".container").hide();
+    $(".tres").fadeIn();
+});
+$(".hr").click(function() {
+    //Sem parâmetros: o efeito é executado em 400ms
+    $(".container").hide();
+    $(".quatro").fadeIn();
+});
+
+//menu mobile
+$(".mobile").hide();
+$(".fa-xmark").hide();
+$(".fa-bars").click(function(){
+	$(".mobile").fadeIn();
+	$(".fa-xmark").fadeIn();
+	$(".fa-bars").hide()
+})
+$(".fa-xmark").click(function(){
+	$(".mobile").hide();
+	$(".fa-bars").fadeIn(500)
+	$(".fa-xmark").hide();
+})
+});
+
+//slide mobile
+const $select = document.getElementById('namesmobile')
+
+function slideMobile(){
+	if ($select.value == "1"){
+		alert("foi")
+		$(".container").hide();
+    	$(".um").fadeIn();
+	}else if($select.value == "2"){
+		$(".container").hide();
+    	$(".dois").fadeIn();
+	}
+}
