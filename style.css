@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+
 }
 
 a {
@@ -453,6 +454,12 @@ nav.desktop a:hover {
 
 
 /*responsivo*/
+@media screen and (max-width: 415px){
+    *{
+        overflow-x: hidden;
+    }
+}
+
 @media screen and (max-width: 1712px){
     .resums{
         min-height: 330px;
@@ -504,6 +511,9 @@ nav.desktop a:hover {
 }
 
 @media screen and (max-width: 910px){
+    .formulario{
+        box-shadow: none;
+    }
     .form{
         display: block;
         margin-left: auto;
