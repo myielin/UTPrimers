@@ -391,15 +391,25 @@ footer {
     padding: 30px;
 }
 
+.redes{
+    width: 100%;
+
+}
+
 footer .fdiv {
-    width: 30%;
+    width: 23%;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+.fdiv:first-child{
+    margin-left: 100px;
 }
 
 .fdiv .text {
     margin: 0 auto;
     max-width: 350px;
+    text-align: left;
 }
 
 .fdiv ul {
@@ -419,6 +429,7 @@ footer .fdiv {
 footer img {
     width: 100px;
     height: 100px;
+
 }
 
 
@@ -449,6 +460,12 @@ nav.desktop a:hover {
 }
 
 @media screen and (max-width:1590px){
+    footer .fdiv{
+        width: 30%;
+    }
+    footer img{
+        display: none;
+    }
     .names-directories {
         width:  65%;
 }
@@ -487,6 +504,20 @@ nav.desktop a:hover {
 }
 
 @media screen and (max-width: 910px){
+    .form{
+        display: block;
+    }
+    .dados{
+        width: 100%;
+    }
+    .mensage{
+        width: 100%;
+    }
+    .bottom input{
+        float: none;
+    }
+
+
     .resums{
         margin-left: 25%;
         min-width: 50%;
@@ -499,7 +530,13 @@ nav.desktop a:hover {
 
 
 @media screen and (max-width: 1220px){
-
+    footer .fdiv {
+        width: 30%;
+        display: block;
+        margin-top: 30px;
+        text-align: center !important;
+        margin-left: 30px !important;
+    }
 
     .logo img{
         float: right;
